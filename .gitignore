@@ -3,24 +3,15 @@
 /out/
 *.class
 
-# IDEs e editores
+# Arquivos de configuração do sistema
+*.log
+*.properties
+*.sqlite
+
+# Configurações do ambiente de desenvolvimento
 .idea/
 *.iml
-.vscode/
-*.log
-
-# Maven e Gradle
-/target/
-/.gradle/
-/mvnw
-/mvnw.cmd
-
-# Configuração do sistema operacional
-.DS_Store
-Thumbs.db
-
-# Credenciais
-application.properties
+*.class
 
 # Dependências locais
 /lib/

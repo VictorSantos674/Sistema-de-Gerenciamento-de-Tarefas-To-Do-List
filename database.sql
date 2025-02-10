@@ -1,7 +1,3 @@
-CREATE DATABASE IF NOT EXISTS database
-
-USE DATABASE IF NOT EXISTS database
-
 -- Criação da tabela de usuários
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -23,6 +19,9 @@ CREATE TABLE IF NOT EXISTS tasks (
 );
 
 -- Inserção de dados iniciais
-INSERT INTO users (username, password) VALUES ('admin', 'admin123');
-INSERT INTO tasks (user_id, title, description, status, due_date) VALUES 
-(1, 'Primeira Tarefa', 'Descrição da primeira tarefa', 'PENDING', '2024-12-31');
+INSERT INTO users (name, email, password) VALUES 
+('Admin', 'admin@example.com', '123456');
+
+IINSERT INTO tasks (title, description, status, deadline, user_id) VALUES 
+('Criar Interface', 'Desenvolver a UI do sistema', 'pendente', '2025-12-01', 1),
+('Refatorar Código', 'Melhorar a organização do código', 'pendente', '2025-12-10', 1);
