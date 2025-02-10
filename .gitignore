@@ -1,0 +1,26 @@
+# Compilação e build
+/build/
+/out/
+*.class
+
+# IDEs e editores
+.idea/
+*.iml
+.vscode/
+*.log
+
+# Maven e Gradle
+/target/
+/.gradle/
+/mvnw
+/mvnw.cmd
+
+# Configuração do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Credenciais
+application.properties
+
+# Dependências locais
+/lib/

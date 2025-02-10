@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.xerial:sqlite-jdbc:3.40.0.0'
+    implementation 'org.xerial:sqlite-jdbc:3.45.0.0'
     implementation 'org.openjfx:javafx-controls:17'
     implementation 'org.openjfx:javafx-fxml:17'
 }
