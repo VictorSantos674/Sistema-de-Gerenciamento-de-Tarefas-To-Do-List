@@ -19,9 +19,8 @@ CREATE TABLE IF NOT EXISTS tasks (
 );
 
 -- Inserção de dados iniciais
-INSERT INTO users (name, email, password) VALUES 
-('Admin', 'admin@example.com', '123456');
+INSERT INTO users (username, email, password) VALUES ('admin', 'admin@email.com', '12345');
 
-IINSERT INTO tasks (title, description, status, deadline, user_id) VALUES 
+INSERT INTO tasks (title, description, status, deadline, user_id) VALUES 
 ('Criar Interface', 'Desenvolver a UI do sistema', 'pendente', '2025-12-01', 1),
 ('Refatorar Código', 'Melhorar a organização do código', 'pendente', '2025-12-10', 1);

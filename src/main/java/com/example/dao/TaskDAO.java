@@ -29,4 +29,17 @@ public class TaskDAO {
         }
         return tasks;
     }
+
+    public void addTask(Task task) {
+        String sql = "INSERT INTO tasks (title, description, completed, user_id) VALUES (?, ?, ?, ?);";
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setString(1, task.getTitle());
+            stmt.setString(2, task.getDescription());
+            stmt.setBoolean(3, task.isCompleted());
+            stmt.setInt(4, task.getUserId()); // Correção: Adição do campo user_id
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
